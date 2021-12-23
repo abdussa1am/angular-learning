@@ -1,0 +1,44 @@
+
+
+
+
+<div class="container">
+
+
+    <form [formGroup]="myForm">
+        <div>
+            <h1 class="text-center">Sign up</h1>
+            <label for="exampleInputEmail1" class="form-label">Email</label>
+                
+                <input formControlName="name" placeholder="Enter Email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            
+            <div *ngIf="name?.invalid && (name?.dirty || name?.touched)"
+                >
+                <div *ngIf="name?.errors?.required" class="alert alert-danger">
+                    required
+                </div>
+                <div *ngIf="name?.errors?.minlength" >
+                    min length required 2
+                </div>
+            </div>
+        </div>
+        <div>
+           
+            <label for="exampleInputEmail1" class="form-label">Password</label>
+            <input formControlName="email" placeholder="Enter password" type="password" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          
+        </div>
+        <!-- <div>
+            <label>
+                Message:
+                <input formControlName="message" placeholder="Your message">
+            </label>
+        </div> -->
+        <button type="button" (click)="onSubmit()" class="btn btn-primary mt-3  center" >Send</button>
+    </form>
+    </div>
+
+<app-login [item]="currentItem" [abc] = "a"> </app-login>
+
+
+

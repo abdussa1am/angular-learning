@@ -1,0 +1,38 @@
+
+
+.nav-container{
+    display: flex;
+    display: row;
+    background-color: black;
+    color: white;
+    height: 30px;
+    gap: 50px;
+    align-items: stretch;
+    justify-content: center;
+    align-items: center;
+}
+/* unvisited link */
+a:link {
+    color: white;
+    text-decoration: none;
+  }
+  
+  /* visited link */
+  a:visited {
+    color: white;
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: white;
+  }
+  
+  /* selected link */
+  a:active {
+    color: white;
+  }
+
+.item:hover{
+    background-color: white;
+    color: black;
+}

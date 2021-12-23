@@ -1,0 +1,22 @@
+<h4>Enter value <input type="text" [(ngModel)] = 'val' /> <br></h4>
+
+ <p>Entered value is value is <span [style.color]='col' [style.font-size]='font'>{{val}}</span> </p>
+
+ 
+<h3>Enter color <input type="text" [(ngModel)] = 'col' ></h3>
+
+<select name="font" id="" [(ngModel)] = 'font' >
+    <option value="" selected> Select Color </option>
+    <option value="15px">15</option>
+    <option value="20px">20</option>
+    <option value="25px">25</option>
+    <option value="30px">20</option>
+    <option value="35px">35</option>
+</select>
+<br>
+ Product Price: 200 <br>
+  Enter Quantity  <input type="number" [(ngModel)] = 'abc' min="1" max="5">
+    
+    <h1>{{ abc * 200}}</h1>
+    
+
